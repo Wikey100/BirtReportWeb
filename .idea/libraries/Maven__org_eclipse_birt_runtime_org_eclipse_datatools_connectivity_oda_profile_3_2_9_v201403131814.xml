@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.eclipse.birt.runtime:org.eclipse.datatools.connectivity.oda.profile:3.2.9.v201403131814">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/eclipse/birt/runtime/org.eclipse.datatools.connectivity.oda.profile/3.2.9.v201403131814/org.eclipse.datatools.connectivity.oda.profile-3.2.9.v201403131814.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/org/eclipse/birt/runtime/org.eclipse.datatools.connectivity.oda.profile/3.2.9.v201403131814/org.eclipse.datatools.connectivity.oda.profile-3.2.9.v201403131814-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/eclipse/birt/runtime/org.eclipse.datatools.connectivity.oda.profile/3.2.9.v201403131814/org.eclipse.datatools.connectivity.oda.profile-3.2.9.v201403131814-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

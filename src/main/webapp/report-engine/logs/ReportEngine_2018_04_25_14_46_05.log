@@ -1,0 +1,32 @@
+四月 25, 2018 2:47:23 下午 org.eclipse.birt.report.model.parser.ModuleReader readModule
+严重: Line Number:881 Error Code:Error.XMLParserException.EXCEPTION Exception:org.eclipse.birt.report.model.api.command.ContentException: The slot(header) of the report.Body[0].Rows[3].Cells[0].Content[0] is full. Message:A generic exception occurred. 
+四月 25, 2018 2:47:23 下午 org.eclipse.birt.report.model.parser.ModuleReader readModule
+严重: Line Number:894 Error Code:Error.XMLParserException.EXCEPTION Exception:org.eclipse.birt.report.model.api.command.ContentException: The slot(header) of the report.Body[0].Rows[3].Cells[0].Content[0] is full. Message:A generic exception occurred. 
+四月 25, 2018 2:47:23 下午 org.eclipse.birt.report.model.parser.ModuleReader readModule
+严重: Line Number:901 Error Code:Error.XMLParserException.EXCEPTION Exception:org.eclipse.birt.report.model.api.command.ContentException: The slot(header) of the report.Body[0].Rows[3].Cells[0].Content[0] is full. Message:A generic exception occurred. 
+四月 25, 2018 2:47:23 下午 org.eclipse.birt.report.engine.api.impl.ReportEngineHelper getReportDesignHandle
+严重: invalid design file file:/E:/01suntek/23武汉21号线AFC/04源代码/LCC报表/reports/RPT_AGM_SUMMARY_STAT.rptdesign
+四月 25, 2018 2:47:36 下午 org.eclipse.birt.report.model.parser.ModuleReader readModule
+严重: Line Number:881 Error Code:Error.XMLParserException.EXCEPTION Exception:org.eclipse.birt.report.model.api.command.ContentException: The slot(header) of the report.Body[0].Rows[3].Cells[0].Content[0] is full. Message:A generic exception occurred. 
+四月 25, 2018 2:47:36 下午 org.eclipse.birt.report.model.parser.ModuleReader readModule
+严重: Line Number:894 Error Code:Error.XMLParserException.EXCEPTION Exception:org.eclipse.birt.report.model.api.command.ContentException: The slot(header) of the report.Body[0].Rows[3].Cells[0].Content[0] is full. Message:A generic exception occurred. 
+四月 25, 2018 2:47:36 下午 org.eclipse.birt.report.model.parser.ModuleReader readModule
+严重: Line Number:901 Error Code:Error.XMLParserException.EXCEPTION Exception:org.eclipse.birt.report.model.api.command.ContentException: The slot(header) of the report.Body[0].Rows[3].Cells[0].Content[0] is full. Message:A generic exception occurred. 
+四月 25, 2018 2:47:36 下午 org.eclipse.birt.report.engine.api.impl.ReportEngineHelper getReportDesignHandle
+严重: invalid design file file:/E:/01suntek/23武汉21号线AFC/04源代码/LCC报表/reports/RPT_AGM_SUMMARY_STAT.rptdesign
+四月 25, 2018 2:47:49 下午 org.eclipse.birt.report.model.parser.ModuleReader readModule
+严重: Line Number:881 Error Code:Error.XMLParserException.EXCEPTION Exception:org.eclipse.birt.report.model.api.command.ContentException: The slot(header) of the report.Body[0].Rows[3].Cells[0].Content[0] is full. Message:A generic exception occurred. 
+四月 25, 2018 2:47:49 下午 org.eclipse.birt.report.model.parser.ModuleReader readModule
+严重: Line Number:894 Error Code:Error.XMLParserException.EXCEPTION Exception:org.eclipse.birt.report.model.api.command.ContentException: The slot(header) of the report.Body[0].Rows[3].Cells[0].Content[0] is full. Message:A generic exception occurred. 
+四月 25, 2018 2:47:49 下午 org.eclipse.birt.report.model.parser.ModuleReader readModule
+严重: Line Number:901 Error Code:Error.XMLParserException.EXCEPTION Exception:org.eclipse.birt.report.model.api.command.ContentException: The slot(header) of the report.Body[0].Rows[3].Cells[0].Content[0] is full. Message:A generic exception occurred. 
+四月 25, 2018 2:47:49 下午 org.eclipse.birt.report.engine.api.impl.ReportEngineHelper getReportDesignHandle
+严重: invalid design file file:/E:/01suntek/23武汉21号线AFC/04源代码/LCC报表/reports/RPT_AGM_SUMMARY_STAT.rptdesign
+四月 25, 2018 2:48:04 下午 org.eclipse.birt.report.model.parser.ModuleReader readModule
+严重: Line Number:881 Error Code:Error.XMLParserException.EXCEPTION Exception:org.eclipse.birt.report.model.api.command.ContentException: The slot(header) of the report.Body[0].Rows[3].Cells[0].Content[0] is full. Message:A generic exception occurred. 
+四月 25, 2018 2:48:04 下午 org.eclipse.birt.report.model.parser.ModuleReader readModule
+严重: Line Number:894 Error Code:Error.XMLParserException.EXCEPTION Exception:org.eclipse.birt.report.model.api.command.ContentException: The slot(header) of the report.Body[0].Rows[3].Cells[0].Content[0] is full. Message:A generic exception occurred. 
+四月 25, 2018 2:48:04 下午 org.eclipse.birt.report.model.parser.ModuleReader readModule
+严重: Line Number:901 Error Code:Error.XMLParserException.EXCEPTION Exception:org.eclipse.birt.report.model.api.command.ContentException: The slot(header) of the report.Body[0].Rows[3].Cells[0].Content[0] is full. Message:A generic exception occurred. 
+四月 25, 2018 2:48:04 下午 org.eclipse.birt.report.engine.api.impl.ReportEngineHelper getReportDesignHandle
+严重: invalid design file file:/E:/01suntek/23武汉21号线AFC/04源代码/LCC报表/reports/RPT_AGM_SUMMARY_STAT.rptdesign

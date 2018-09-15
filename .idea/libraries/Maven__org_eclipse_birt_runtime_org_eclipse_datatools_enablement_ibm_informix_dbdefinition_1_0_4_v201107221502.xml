@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.eclipse.birt.runtime:org.eclipse.datatools.enablement.ibm.informix.dbdefinition:1.0.4.v201107221502">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/eclipse/birt/runtime/org.eclipse.datatools.enablement.ibm.informix.dbdefinition/1.0.4.v201107221502/org.eclipse.datatools.enablement.ibm.informix.dbdefinition-1.0.4.v201107221502.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/org/eclipse/birt/runtime/org.eclipse.datatools.enablement.ibm.informix.dbdefinition/1.0.4.v201107221502/org.eclipse.datatools.enablement.ibm.informix.dbdefinition-1.0.4.v201107221502-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/eclipse/birt/runtime/org.eclipse.datatools.enablement.ibm.informix.dbdefinition/1.0.4.v201107221502/org.eclipse.datatools.enablement.ibm.informix.dbdefinition-1.0.4.v201107221502-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

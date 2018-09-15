@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.eclipse.birt.runtime:org.eclipse.datatools.enablement.oracle:1.0.0.v201107221506">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/eclipse/birt/runtime/org.eclipse.datatools.enablement.oracle/1.0.0.v201107221506/org.eclipse.datatools.enablement.oracle-1.0.0.v201107221506.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/org/eclipse/birt/runtime/org.eclipse.datatools.enablement.oracle/1.0.0.v201107221506/org.eclipse.datatools.enablement.oracle-1.0.0.v201107221506-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/eclipse/birt/runtime/org.eclipse.datatools.enablement.oracle/1.0.0.v201107221506/org.eclipse.datatools.enablement.oracle-1.0.0.v201107221506-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

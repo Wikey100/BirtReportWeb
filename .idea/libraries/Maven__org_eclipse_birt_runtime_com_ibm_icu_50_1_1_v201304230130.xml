@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.eclipse.birt.runtime:com.ibm.icu:50.1.1.v201304230130">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/eclipse/birt/runtime/com.ibm.icu/50.1.1.v201304230130/com.ibm.icu-50.1.1.v201304230130.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/org/eclipse/birt/runtime/com.ibm.icu/50.1.1.v201304230130/com.ibm.icu-50.1.1.v201304230130-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/eclipse/birt/runtime/com.ibm.icu/50.1.1.v201304230130/com.ibm.icu-50.1.1.v201304230130-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

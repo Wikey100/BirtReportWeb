@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module org.jetbrains.idea.maven.project.MavenProjectsManager.isMavenModule="true" type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="web" name="Web">
+      <configuration>
+        <descriptors>
+          <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/src/main/webapp/WEB-INF/web.xml" />
+        </descriptors>
+        <webroots>
+          <root url="file://$MODULE_DIR$/src/main/webapp" relative="/" />
+        </webroots>
+        <sourceRoots>
+          <root url="file://$MODULE_DIR$/src/main/java" />
+          <root url="file://$MODULE_DIR$/src/main/resources" />
+        </sourceRoots>
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_8" inherit-compiler-output="false">
+    <output url="file://$MODULE_DIR$/target/classes" />
+    <output-test url="file://$MODULE_DIR$/target/test-classes" />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/main/resources" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/test/java" isTestSource="true" />
+      <excludeFolder url="file://$MODULE_DIR$/target" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="Maven: org.apache.poi:poi-ooxml-schemas:3.9" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.xmlbeans:xmlbeans:2.3.0" level="project" />
+    <orderEntry type="library" name="Maven: stax:stax-api:1.0.1" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter-web:1.5.3.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter:1.5.3.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot:1.5.3.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-autoconfigure:1.5.3.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter-logging:1.5.3.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: ch.qos.logback:logback-classic:1.1.11" level="project" />
+    <orderEntry type="library" name="Maven: ch.qos.logback:logback-core:1.1.11" level="project" />
+    <orderEntry type="library" name="Maven: org.slf4j:jul-to-slf4j:1.7.25" level="project" />
+    <orderEntry type="library" name="Maven: org.slf4j:log4j-over-slf4j:1.7.25" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Maven: org.yaml:snakeyaml:1.17" level="project" />
+    <orderEntry type="library" name="Maven: org.hibernate:hibernate-validator:5.3.5.Final" level="project" />
+    <orderEntry type="library" name="Maven: javax.validation:validation-api:1.1.0.Final" level="project" />
+    <orderEntry type="library" name="Maven: org.jboss.logging:jboss-logging:3.3.1.Final" level="project" />
+    <orderEntry type="library" name="Maven: com.fasterxml:classmate:1.3.3" level="project" />
+    <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-databind:2.8.8" level="project" />
+    <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.8.0" level="project" />
+    <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-core:2.8.8" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-web:4.3.8.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-beans:4.3.8.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-context:4.3.8.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-webmvc:4.3.8.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-expression:4.3.8.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter-jetty:1.5.3.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.jetty:jetty-servlets:9.4.4.v20170414" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.jetty:jetty-continuation:9.4.4.v20170414" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.jetty:jetty-http:9.4.4.v20170414" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.jetty:jetty-util:9.4.4.v20170414" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.jetty:jetty-io:9.4.4.v20170414" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.jetty:jetty-webapp:9.4.4.v20170414" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.jetty:jetty-xml:9.4.4.v20170414" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.jetty:jetty-servlet:9.4.4.v20170414" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.jetty:jetty-security:9.4.4.v20170414" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.jetty:jetty-server:9.4.4.v20170414" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.jetty.websocket:websocket-server:9.4.4.v20170414" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.jetty.websocket:websocket-common:9.4.4.v20170414" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.jetty.websocket:websocket-api:9.4.4.v20170414" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.jetty.websocket:websocket-client:9.4.4.v20170414" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.jetty:jetty-client:9.4.4.v20170414" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.jetty.websocket:websocket-servlet:9.4.4.v20170414" level="project" />
+    <orderEntry type="library" name="Maven: javax.servlet:javax.servlet-api:3.1.0" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.jetty.websocket:javax-websocket-server-impl:9.4.4.v20170414" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.jetty:jetty-annotations:9.4.4.v20170414" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.jetty:jetty-plus:9.4.4.v20170414" level="project" />
+    <orderEntry type="library" name="Maven: javax.annotation:javax.annotation-api:1.2" level="project" />
+    <orderEntry type="library" name="Maven: org.ow2.asm:asm:5.1" level="project" />
+    <orderEntry type="library" name="Maven: org.ow2.asm:asm-commons:5.1" level="project" />
+    <orderEntry type="library" name="Maven: org.ow2.asm:asm-tree:5.1" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.jetty.websocket:javax-websocket-client-impl:9.4.4.v20170414" level="project" />
+    <orderEntry type="library" name="Maven: javax.websocket:javax.websocket-api:1.0" level="project" />
+    <orderEntry type="library" name="Maven: org.mortbay.jasper:apache-el:8.0.33" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter-data-jpa:1.5.3.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter-aop:1.5.3.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.aspectj:aspectjweaver:1.8.10" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter-jdbc:1.5.3.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.tomcat:tomcat-jdbc:8.5.14" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.tomcat:tomcat-juli:8.5.14" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-jdbc:4.3.8.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.hibernate:hibernate-core:5.0.12.Final" level="project" />
+    <orderEntry type="library" name="Maven: org.hibernate.javax.persistence:hibernate-jpa-2.1-api:1.0.0.Final" level="project" />
+    <orderEntry type="library" name="Maven: org.javassist:javassist:3.21.0-GA" level="project" />
+    <orderEntry type="library" name="Maven: antlr:antlr:2.7.7" level="project" />
+    <orderEntry type="library" name="Maven: org.jboss:jandex:2.0.0.Final" level="project" />
+    <orderEntry type="library" name="Maven: dom4j:dom4j:1.6.1" level="project" />
+    <orderEntry type="library" name="Maven: org.hibernate.common:hibernate-commons-annotations:5.0.1.Final" level="project" />
+    <orderEntry type="library" name="Maven: org.hibernate:hibernate-entitymanager:5.0.12.Final" level="project" />
+    <orderEntry type="library" name="Maven: javax.transaction:javax.transaction-api:1.2" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework.data:spring-data-jpa:1.11.3.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework.data:spring-data-commons:1.13.3.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-orm:4.3.8.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-tx:4.3.8.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.slf4j:jcl-over-slf4j:1.7.25" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-aspects:4.3.8.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter-security:1.5.3.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-aop:4.3.8.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework.security:spring-security-config:4.2.2.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework.security:spring-security-core:4.2.2.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework.security:spring-security-web:4.2.2.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter-test:1.5.3.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-test:1.5.3.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-test-autoconfigure:1.5.3.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: com.jayway.jsonpath:json-path:2.2.0" level="project" />
+    <orderEntry type="library" name="Maven: net.minidev:json-smart:2.2.1" level="project" />
+    <orderEntry type="library" name="Maven: net.minidev:accessors-smart:1.1" level="project" />
+    <orderEntry type="library" name="Maven: junit:junit:4.12" level="project" />
+    <orderEntry type="library" name="Maven: org.assertj:assertj-core:2.6.0" level="project" />
+    <orderEntry type="library" name="Maven: org.mockito:mockito-core:1.10.19" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Maven: org.objenesis:objenesis:2.1" level="project" />
+    <orderEntry type="library" name="Maven: org.hamcrest:hamcrest-core:1.3" level="project" />
+    <orderEntry type="library" name="Maven: org.hamcrest:hamcrest-library:1.3" level="project" />
+    <orderEntry type="library" name="Maven: org.skyscreamer:jsonassert:1.4.0" level="project" />
+    <orderEntry type="library" name="Maven: com.vaadin.external.google:android-json:0.0.20131108.vaadin1" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-core:4.3.8.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-test:4.3.8.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.webjars:bootstrap:3.3.5" level="project" />
+    <orderEntry type="library" name="Maven: org.webjars:jquery:2.1.4" level="project" />
+    <orderEntry type="library" name="Maven: org.webjars.bower:bootstrap3-dialog:1.34.4" level="project" />
+    <orderEntry type="library" name="Maven: org.webjars.bower:nprogress:0.2.0" level="project" />
+    <orderEntry type="library" name="Maven: com.oracle:ojdbc6:11.2.0.4.0-atlassian-hosted" level="project" />
+    <orderEntry type="library" name="Maven: com.googlecode.log4jdbc:log4jdbc:1.2" level="project" />
+    <orderEntry type="library" name="Maven: org.slf4j:slf4j-api:1.7.25" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.commons:commons-lang3:3.5" level="project" />
+    <orderEntry type="library" name="Maven: com.google.guava:guava:19.0" level="project" />
+    <orderEntry type="library" name="Maven: commons-io:commons-io:2.0.1" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.tomcat.embed:tomcat-embed-jasper:8.5.14" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.tomcat.embed:tomcat-embed-core:8.5.14" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.tomcat.embed:tomcat-embed-el:8.5.14" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.jdt.core.compiler:ecj:4.6.1" level="project" />
+    <orderEntry type="library" name="Maven: javax.servlet:jstl:1.2" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.axis:axis-jaxrpc:1.4" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.birt.runtime:viewservlets:4.4.1" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.axis:axis:1.4" level="project" />
+    <orderEntry type="library" name="Maven: commons-discovery:commons-discovery:0.5" level="project" />
+    <orderEntry type="library" name="Maven: commons-logging:commons-logging:1.1.1" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.birt.runtime:org.eclipse.birt.runtime:4.4.1" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.birt.runtime:org.eclipse.core.expressions:3.4.500.v20130515-1343" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.birt.runtime:org.eclipse.emf.ecore.xmi:2.10.1.v20140901-1043" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.birt.runtime:org.eclipse.datatools.connectivity.oda.design:3.3.6.v201212070447" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.birt.runtime:org.eclipse.datatools.enablement.oda.xml:1.2.5.v201305031101" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.birt.runtime:org.eclipse.datatools.enablement.oda.ws:1.2.6.v201403131825" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.birt.runtime:org.eclipse.core.runtime:3.9.0.v20130326-1255" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.birt.runtime:org.eclipse.equinox.app:1.3.100.v20130327-1442" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.birt.runtime:com.ibm.icu:50.1.1.v201304230130" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.birt.runtime:org.eclipse.equinox.registry:3.5.400.v20140428-1507" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.birt.runtime:org.eclipse.datatools.connectivity.dbdefinition.genericJDBC:1.0.1.v201107221459" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.birt.runtime:org.eclipse.osgi:3.10.1.v20140909-1633" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.birt.runtime:org.eclipse.emf.common:2.10.1.v20140901-1043" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.birt.runtime:org.eclipse.datatools.connectivity.sqm.core:1.2.8.v201401230755" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.birt.runtime:org.eclipse.datatools.connectivity.oda.consumer:3.2.6.v201305170644" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.birt.runtime:org.eclipse.core.jobs:3.6.0.v20140424-0053" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.birt.runtime:org.eclipse.datatools.enablement.ibm.db2.luw.dbdefinition:1.0.4.v201107221502" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.birt.runtime:org.eclipse.osgi.services:3.3.100.v20130513-1956" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.birt.runtime:org.eclipse.core.contenttype:3.4.200.v20130326-1255" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.birt.runtime:org.eclipse.emf.ecore.change:2.10.0.v20140901-1043" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.birt.runtime:org.eclipse.datatools.connectivity.oda.profile:3.2.9.v201403131814" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.birt.runtime:org.eclipse.core.filesystem:1.4.0.v20130514-1240" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.birt.runtime:org.eclipse.datatools.connectivity:1.2.11.v201401230755" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.birt.runtime:org.eclipse.equinox.preferences:3.5.100.v20130422-1538" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.birt.runtime:org.eclipse.emf.ecore:2.10.1.v20140901-1043" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.birt.runtime:org.eclipse.core.resources:3.9.1.v20140825-1431" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.birt.runtime:org.eclipse.datatools.connectivity.oda.flatfile:3.1.8.v201403010906" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.birt.runtime:org.eclipse.datatools.enablement.ibm.db2.luw:1.0.2.v201107221502" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.birt.runtime:org.eclipse.update.configurator:3.3.200.v20130326-1319" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.birt.runtime:org.eclipse.datatools.connectivity.oda:3.4.3.v201405301249" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.birt.runtime:org.eclipse.emf:2.6.0.v20140901-1055" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.birt.runtime.3_7_1:org.w3c.dom.smil:1.0.0" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.birt.runtime:org.eclipse.datatools.enablement.hsqldb.dbdefinition:1.0.0.v201107221502" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.birt.runtime:org.eclipse.datatools.modelbase.derby:1.0.0.v201107221519" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.birt.runtime.3_7_1:org.apache.batik.parser:1.6.0" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.birt.runtime:org.eclipse.equinox.common:3.6.200.v20130402-1505" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.birt.runtime.3_7_1:org.apache.batik.util.gui:1.6.0" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.birt.runtime:javax.xml.stream:1.0.1.v201004272200" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.birt.runtime:org.eclipse.datatools.enablement.ibm.informix:1.0.1.v201107221502" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.birt.runtime.3_7_1:derby:10.5.1000001" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.birt.runtime.3_7_1:org.apache.batik.svggen:1.6.0" level="project" />
+    <orderEntry type="library" name="Maven: commons-cli:commons-cli:1.0" level="project" />
+    <orderEntry type="library" name="Maven: commons-lang:commons-lang:1.0" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.birt.runtime.3_7_1:org.apache.batik.dom:1.6.0" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.birt.runtime.3_7_1:org.apache.batik.css:1.6.0" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.poi:poi-ooxml:3.9" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.birt.runtime:org.eclipse.datatools.enablement.mysql:1.0.4.v201212120617" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.birt.runtime:org.eclipse.datatools.connectivity.db.generic:1.0.1.v201107221459" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.birt.runtime:org.eclipse.datatools.enablement.hsqldb:1.0.0.v201107221502" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.birt.runtime:org.eclipse.datatools.enablement.msft.sqlserver.dbdefinition:1.0.1.v201201240505" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.birt.runtime.3_7_1:org.apache.xml.resolver:1.2.0" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.birt.runtime:org.eclipse.datatools.enablement.ibm.informix.dbdefinition:1.0.4.v201107221502" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.birt.runtime:org.eclipse.datatools.modelbase.sql:1.0.6.v201208230744" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.birt.runtime.3_7_1:org.w3c.dom.svg:1.1.0" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.birt.runtime.3_7_1:org.apache.batik.dom.svg:1.6.0" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.poi:poi:3.9" level="project" />
+    <orderEntry type="library" name="Maven: commons-codec:commons-codec:1.10" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.birt.runtime.3_7_1:org.apache.batik.ext.awt:1.6.0" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.birt.runtime.3_7_1:org.mozilla.javascript:1.7.2" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.birt.runtime:org.eclipse.datatools.enablement.postgresql:1.1.1.v201205252207" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.birt.runtime.3_7_1:org.apache.batik.transcoder:1.6.0" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.birt.runtime:org.eclipse.datatools.connectivity.apache.derby.dbdefinition:1.0.2.v201107221459" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.birt.runtime:org.eclipse.datatools.enablement.oracle:1.0.0.v201107221506" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.birt.runtime.3_7_1:org.apache.batik.util:1.6.0" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.birt.runtime:org.eclipse.datatools.enablement.oracle.dbdefinition:1.0.103.v201206010214" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.birt.runtime.3_7_1:org.apache.batik.xml:1.6.0" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.birt.runtime.3_7_1:org.apache.xml.serializer:2.7.1" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.birt.runtime.3_7_1:org.apache.xerces:2.9.0" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.birt.runtime:org.eclipse.datatools.modelbase.sql.query:1.1.4.v201212120619" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.birt.runtime:org.eclipse.datatools.modelbase.dbdefinition:1.0.2.v201107221519" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.birt.runtime:org.eclipse.datatools.enablement.mysql.dbdefinition:1.0.4.v201109022331" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.birt.runtime.3_7_1:javax.wsdl:1.5.1" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.birt.runtime.3_7_1:Tidy:1" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.birt.runtime:org.eclipse.datatools.enablement.postgresql.dbdefinition:1.0.2.v201110070445" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.birt.runtime.3_7_1:org.w3c.css.sac:1.3.0" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.birt.runtime:org.eclipse.datatools.enablement.msft.sqlserver:1.0.2.v201212120617" level="project" />
+    <orderEntry type="library" name="Maven: org.milyn:flute:1.3" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.birt.runtime:org.eclipse.datatools.connectivity.apache.derby:1.0.103.v201212070447" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.birt.runtime:org.eclipse.datatools.connectivity.console.profile:1.0.10.v201109250955" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.birt.runtime.3_7_1:org.apache.commons.codec:1.3.0" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.birt.runtime.3_7_1:com.lowagie.text:2.1.7" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.birt.runtime.3_7_1:org.apache.batik.bridge:1.6.0" level="project" />
+  </component>
+</module>

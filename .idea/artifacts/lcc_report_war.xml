@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="lcc-report:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="lcc-report-1.2.war">
+      <element id="artifact" artifact-name="lcc-report:war exploded" />
+    </root>
+  </artifact>
+</component>

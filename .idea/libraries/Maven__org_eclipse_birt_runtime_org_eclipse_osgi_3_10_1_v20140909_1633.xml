@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.eclipse.birt.runtime:org.eclipse.osgi:3.10.1.v20140909-1633">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/eclipse/birt/runtime/org.eclipse.osgi/3.10.1.v20140909-1633/org.eclipse.osgi-3.10.1.v20140909-1633.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/org/eclipse/birt/runtime/org.eclipse.osgi/3.10.1.v20140909-1633/org.eclipse.osgi-3.10.1.v20140909-1633-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/eclipse/birt/runtime/org.eclipse.osgi/3.10.1.v20140909-1633/org.eclipse.osgi-3.10.1.v20140909-1633-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

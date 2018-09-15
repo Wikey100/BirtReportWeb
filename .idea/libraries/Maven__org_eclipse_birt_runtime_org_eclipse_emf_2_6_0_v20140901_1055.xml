@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.eclipse.birt.runtime:org.eclipse.emf:2.6.0.v20140901-1055">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/eclipse/birt/runtime/org.eclipse.emf/2.6.0.v20140901-1055/org.eclipse.emf-2.6.0.v20140901-1055.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/org/eclipse/birt/runtime/org.eclipse.emf/2.6.0.v20140901-1055/org.eclipse.emf-2.6.0.v20140901-1055-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/eclipse/birt/runtime/org.eclipse.emf/2.6.0.v20140901-1055/org.eclipse.emf-2.6.0.v20140901-1055-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

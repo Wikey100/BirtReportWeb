@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.eclipse.birt.runtime:org.eclipse.datatools.enablement.mysql.dbdefinition:1.0.4.v201109022331">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/eclipse/birt/runtime/org.eclipse.datatools.enablement.mysql.dbdefinition/1.0.4.v201109022331/org.eclipse.datatools.enablement.mysql.dbdefinition-1.0.4.v201109022331.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/org/eclipse/birt/runtime/org.eclipse.datatools.enablement.mysql.dbdefinition/1.0.4.v201109022331/org.eclipse.datatools.enablement.mysql.dbdefinition-1.0.4.v201109022331-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/eclipse/birt/runtime/org.eclipse.datatools.enablement.mysql.dbdefinition/1.0.4.v201109022331/org.eclipse.datatools.enablement.mysql.dbdefinition-1.0.4.v201109022331-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

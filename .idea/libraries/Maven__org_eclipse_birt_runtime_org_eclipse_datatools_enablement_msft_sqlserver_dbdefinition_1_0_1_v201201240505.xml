@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.eclipse.birt.runtime:org.eclipse.datatools.enablement.msft.sqlserver.dbdefinition:1.0.1.v201201240505">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/eclipse/birt/runtime/org.eclipse.datatools.enablement.msft.sqlserver.dbdefinition/1.0.1.v201201240505/org.eclipse.datatools.enablement.msft.sqlserver.dbdefinition-1.0.1.v201201240505.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/org/eclipse/birt/runtime/org.eclipse.datatools.enablement.msft.sqlserver.dbdefinition/1.0.1.v201201240505/org.eclipse.datatools.enablement.msft.sqlserver.dbdefinition-1.0.1.v201201240505-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/eclipse/birt/runtime/org.eclipse.datatools.enablement.msft.sqlserver.dbdefinition/1.0.1.v201201240505/org.eclipse.datatools.enablement.msft.sqlserver.dbdefinition-1.0.1.v201201240505-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

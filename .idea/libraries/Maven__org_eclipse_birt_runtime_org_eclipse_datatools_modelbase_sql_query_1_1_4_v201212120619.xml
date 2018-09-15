@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.eclipse.birt.runtime:org.eclipse.datatools.modelbase.sql.query:1.1.4.v201212120619">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/eclipse/birt/runtime/org.eclipse.datatools.modelbase.sql.query/1.1.4.v201212120619/org.eclipse.datatools.modelbase.sql.query-1.1.4.v201212120619.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/org/eclipse/birt/runtime/org.eclipse.datatools.modelbase.sql.query/1.1.4.v201212120619/org.eclipse.datatools.modelbase.sql.query-1.1.4.v201212120619-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/eclipse/birt/runtime/org.eclipse.datatools.modelbase.sql.query/1.1.4.v201212120619/org.eclipse.datatools.modelbase.sql.query-1.1.4.v201212120619-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

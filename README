@@ -1,0 +1,11 @@
+1.安装jdk，maven
+
+2.安装maven目录下的ojdbc6-12.1.0.2.jar包
+命令：mvn install:install-file -DgroupId=com.Oracle -DartifactId=ojdbc6 -Dversion=12.1.0.2 -Dpackaging=jar -Dfile=ojdbc6-12.1.0.2.jar
+
+3.修改数据库连接：修改reports/datasource.rptlibrary文件中的参数
+配置文件src/main/resources/application.properties,web端口号：server.port=8080
+
+4.增加用户SEC_USER，SEC_ROLE，参考测试用例com.pci.afc.UserTest
+
+5.运行com.pci.afc.Application.main方法启动程序

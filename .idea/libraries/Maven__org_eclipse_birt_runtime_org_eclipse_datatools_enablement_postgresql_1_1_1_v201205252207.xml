@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.eclipse.birt.runtime:org.eclipse.datatools.enablement.postgresql:1.1.1.v201205252207">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/eclipse/birt/runtime/org.eclipse.datatools.enablement.postgresql/1.1.1.v201205252207/org.eclipse.datatools.enablement.postgresql-1.1.1.v201205252207.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/org/eclipse/birt/runtime/org.eclipse.datatools.enablement.postgresql/1.1.1.v201205252207/org.eclipse.datatools.enablement.postgresql-1.1.1.v201205252207-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/eclipse/birt/runtime/org.eclipse.datatools.enablement.postgresql/1.1.1.v201205252207/org.eclipse.datatools.enablement.postgresql-1.1.1.v201205252207-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,1975 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<report xmlns="http://www.eclipse.org/birt/2005/design" version="3.2.23" id="1">
+    <property name="createdBy">Eclipse BIRT Designer Version 4.7.0.v201706142203</property>
+    <list-property name="propertyBindings">
+        <structure>
+            <property name="name">queryText</property>
+            <property name="id">3995</property>
+        </structure>
+        <structure>
+            <property name="name">queryTimeOut</property>
+            <property name="id">3995</property>
+        </structure>
+        <structure>
+            <property name="name">rowFetchSize</property>
+            <property name="id">3995</property>
+        </structure>
+    </list-property>
+    <property name="units">in</property>
+    <property name="iconFile">/templates/blank_report.gif</property>
+    <property name="layoutPreference">auto layout</property>
+    <property name="bidiLayoutOrientation">ltr</property>
+    <property name="imageDPI">96</property>
+    <parameters>
+        <scalar-parameter name="p_LineId" id="6">
+            <text-property name="promptText">请选择线路（如阳逻线）</text-property>
+            <property name="valueType">static</property>
+            <property name="dataType">string</property>
+            <property name="distinct">true</property>
+            <list-property name="selectionList">
+                <structure>
+                    <property name="value">21</property>
+                    <property name="label">阳逻线</property>
+                </structure>
+            </list-property>
+            <property name="paramType">simple</property>
+            <property name="controlType">list-box</property>
+            <property name="mustMatch">true</property>
+            <property name="fixedOrder">true</property>
+            <structure name="format">
+                <property name="category">Unformatted</property>
+            </structure>
+        </scalar-parameter>
+        <scalar-parameter name="p_Start" id="733">
+            <text-property name="promptText">开始日期</text-property>
+            <property name="valueType">dynamic</property>
+            <property name="dataSetName">DS_DATE_STRING</property>
+            <expression name="valueExpr" type="javascript">dataSetRow["DATE_STR"]</expression>
+            <expression name="labelExpr" type="javascript">dataSetRow["DATE_STR"]</expression>
+            <expression name="sortByColumn">dataSetRow["DATE_STR"]</expression>
+            <property name="sortDirection">asc</property>
+            <property name="dataType">string</property>
+            <property name="distinct">true</property>
+            <simple-property-list name="defaultValue">
+                <value type="javascript">var date = new Date();&#13;
+    var seperator1 = "-";&#13;
+    var seperator2 = ":";&#13;
+	var strDate;&#13;
+    var month = date.getMonth() + 1;&#13;
+	if(date.getDate()==1)&#13;
+	{&#13;
+		strDate = date.getDate();&#13;
+	}&#13;
+	else&#13;
+	{&#13;
+		strDate = date.getDate()-1;&#13;
+	}&#13;
+    if (month >= 1 &amp;&amp; month &lt;= 9) {&#13;
+        month = "0" + month;&#13;
+    }&#13;
+    if (strDate >= 0 &amp;&amp; strDate &lt;= 9) {&#13;
+        strDate = "0" + strDate;&#13;
+    }&#13;
+date.getFullYear() + seperator1 + month + seperator1 + strDate;</value>
+            </simple-property-list>
+            <list-property name="selectionList"/>
+            <property name="paramType">simple</property>
+            <property name="controlType">list-box</property>
+            <property name="mustMatch">false</property>
+            <property name="fixedOrder">false</property>
+            <structure name="format">
+                <property name="category">Unformatted</property>
+            </structure>
+        </scalar-parameter>
+        <scalar-parameter name="p_End" id="734">
+            <text-property name="promptText">结束日期</text-property>
+            <property name="valueType">dynamic</property>
+            <property name="dataSetName">DS_DATE_STRING</property>
+            <expression name="valueExpr" type="javascript">dataSetRow["DATE_STR"]</expression>
+            <expression name="labelExpr" type="javascript">dataSetRow["DATE_STR"]</expression>
+            <expression name="sortByColumn">dataSetRow["DATE_STR"]</expression>
+            <property name="sortDirection">asc</property>
+            <property name="dataType">string</property>
+            <property name="distinct">true</property>
+            <simple-property-list name="defaultValue">
+                <value type="javascript">var date = new Date();&#13;
+    var seperator1 = "-";&#13;
+    var seperator2 = ":";&#13;
+	var strDate;&#13;
+    var month = date.getMonth() + 1;&#13;
+	if(date.getDate()==1)&#13;
+	{&#13;
+		strDate = date.getDate();&#13;
+	}&#13;
+	else&#13;
+	{&#13;
+		strDate = date.getDate()-1;&#13;
+	}&#13;
+    if (month >= 1 &amp;&amp; month &lt;= 9) {&#13;
+        month = "0" + month;&#13;
+    }&#13;
+    if (strDate >= 0 &amp;&amp; strDate &lt;= 9) {&#13;
+        strDate = "0" + strDate;&#13;
+    }&#13;
+date.getFullYear() + seperator1 + month + seperator1 + strDate;</value>
+            </simple-property-list>
+            <list-property name="selectionList"/>
+            <property name="paramType">simple</property>
+            <property name="controlType">list-box</property>
+            <property name="mustMatch">false</property>
+            <property name="fixedOrder">false</property>
+            <structure name="format">
+                <property name="category">Unformatted</property>
+            </structure>
+        </scalar-parameter>
+        <scalar-parameter name="user_id" id="3993">
+            <property name="hidden">true</property>
+            <property name="valueType">static</property>
+            <property name="dataType">string</property>
+            <property name="distinct">true</property>
+            <simple-property-list name="defaultValue">
+                <value type="javascript">params["user_id"].value;</value>
+            </simple-property-list>
+            <list-property name="selectionList"/>
+            <property name="paramType">simple</property>
+            <property name="controlType">text-box</property>
+            <structure name="format">
+                <property name="category">Unformatted</property>
+            </structure>
+        </scalar-parameter>
+        <scalar-parameter name="制表人" id="3996">
+            <property name="hidden">false</property>
+            <property name="valueType">dynamic</property>
+            <property name="isRequired">true</property>
+            <property name="dataSetName">DS_USER</property>
+            <expression name="valueExpr" type="javascript">dataSetRow["USERNAME"]</expression>
+            <expression name="labelExpr" type="javascript">dataSetRow["USERNAME"]</expression>
+            <property name="dataType">string</property>
+            <property name="distinct">true</property>
+            <simple-property-list name="defaultValue">
+                <value type="javascript">dataSetRow["USERNAME"]</value>
+            </simple-property-list>
+            <list-property name="selectionList"/>
+            <property name="paramType">simple</property>
+            <property name="controlType">list-box</property>
+            <property name="mustMatch">true</property>
+            <property name="fixedOrder">true</property>
+            <structure name="format">
+                <property name="category">Unformatted</property>
+            </structure>
+        </scalar-parameter>
+    </parameters>
+    <data-sources>
+        <oda-data-source extensionID="org.eclipse.birt.report.data.oda.jdbc" name="lccreport_ds" id="4">
+            <list-property name="privateDriverProperties">
+                <ex-property>
+                    <name>metadataBidiFormatStr</name>
+                    <value>ILYNN</value>
+                </ex-property>
+                <ex-property>
+                    <name>disabledMetadataBidiFormatStr</name>
+                </ex-property>
+                <ex-property>
+                    <name>contentBidiFormatStr</name>
+                    <value>ILYNN</value>
+                </ex-property>
+                <ex-property>
+                    <name>disabledContentBidiFormatStr</name>
+                </ex-property>
+            </list-property>
+            <property name="odaDriverClass">oracle.jdbc.OracleDriver</property>
+            <property name="odaURL">jdbc:oracle:thin:@172.16.62.238:1521/wh21LCC</property>
+            <property name="odaUser">LCC</property>
+            <encrypted-property name="odaPassword" encryptionID="base64">NjU0MzIx</encrypted-property>
+        </oda-data-source>
+    </data-sources>
+    <data-sets>
+        <oda-data-set extensionID="org.eclipse.birt.report.data.oda.jdbc.JdbcSelectDataSet" name="DS_DATE_STRING" id="732">
+            <list-property name="columnHints">
+                <structure>
+                    <property name="columnName">DATE_STR</property>
+                    <text-property name="displayName">DATE_STR</text-property>
+                    <text-property name="heading">DATE_STR</text-property>
+                </structure>
+            </list-property>
+            <structure name="cachedMetaData">
+                <list-property name="resultSet">
+                    <structure>
+                        <property name="position">1</property>
+                        <property name="name">DATE_STR</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                </list-property>
+            </structure>
+            <property name="dataSource">lccreport_ds</property>
+            <list-property name="resultSet">
+                <structure>
+                    <property name="position">1</property>
+                    <property name="name">DATE_STR</property>
+                    <property name="nativeName">DATE_STR</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+            </list-property>
+            <xml-property name="queryText"><![CDATA[Select DATE_STR from CDE_REPORT_DATE_STRING ]]></xml-property>
+            <xml-property name="designerValues"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<model:DesignValues xmlns:design="http://www.eclipse.org/datatools/connectivity/oda/design" xmlns:model="http://www.eclipse.org/birt/report/model/adapter/odaModel">
+  <Version>2.0</Version>
+  <design:ResultSets derivedMetaData="true">
+    <design:resultSetDefinitions>
+      <design:resultSetColumns>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>DATE_STR</design:name>
+              <design:position>1</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>14</design:precision>
+            <design:scale>0</design:scale>
+            <design:nullability>NotNullable</design:nullability>
+            <design:uiHints>
+              <design:displayName>DATE_STR</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>DATE_STR</design:label>
+            <design:formattingHints>
+              <design:displaySize>14</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+      </design:resultSetColumns>
+      <design:criteria/>
+    </design:resultSetDefinitions>
+  </design:ResultSets>
+</model:DesignValues>]]></xml-property>
+        </oda-data-set>
+        <oda-data-set extensionID="org.eclipse.birt.report.data.oda.jdbc.JdbcSelectDataSet" name="DS_MON_BOM_CASH_AUDIT" id="3931">
+            <list-property name="columnHints">
+                <structure>
+                    <property name="columnName">REPORTDATE</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">REPORTDATE</text-property>
+                    <text-property name="heading">REPORTDATE</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">STATIONID</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">STATIONID</text-property>
+                    <text-property name="heading">STATIONID</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">STATIONNAME</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">STATIONNAME</text-property>
+                    <text-property name="heading">STATIONNAME</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">OPERATORID</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">OPERATORID</text-property>
+                    <text-property name="heading">OPERATORID</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">TRANSACTION_INCOME</property>
+                    <property name="analysis">measure</property>
+                    <text-property name="displayName">TRANSACTION_INCOME</text-property>
+                    <text-property name="heading">TRANSACTION_INCOME</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">TRANSACTION_ADJUST</property>
+                    <property name="analysis">measure</property>
+                    <text-property name="displayName">TRANSACTION_ADJUST</text-property>
+                    <text-property name="heading">TRANSACTION_ADJUST</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">AFTER_TRANSACTION_ADJUST</property>
+                    <property name="analysis">measure</property>
+                    <text-property name="displayName">AFTER_TRANSACTION_ADJUST</text-property>
+                    <text-property name="heading">AFTER_TRANSACTION_ADJUST</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">REAL_RECEIVE</property>
+                    <property name="analysis">measure</property>
+                    <text-property name="displayName">REAL_RECEIVE</text-property>
+                    <text-property name="heading">REAL_RECEIVE</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">REAL_RETURN</property>
+                    <property name="analysis">measure</property>
+                    <text-property name="displayName">REAL_RETURN</text-property>
+                    <text-property name="heading">REAL_RETURN</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">REAL_INCOME</property>
+                    <property name="analysis">measure</property>
+                    <text-property name="displayName">REAL_INCOME</text-property>
+                    <text-property name="heading">REAL_INCOME</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">REAL_ADJUST</property>
+                    <property name="analysis">measure</property>
+                    <text-property name="displayName">REAL_ADJUST</text-property>
+                    <text-property name="heading">REAL_ADJUST</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">AFTER_REAL_ADJUST</property>
+                    <property name="analysis">measure</property>
+                    <text-property name="displayName">AFTER_REAL_ADJUST</text-property>
+                    <text-property name="heading">AFTER_REAL_ADJUST</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">AUDIT_DIFF</property>
+                    <property name="analysis">measure</property>
+                    <text-property name="displayName">AUDIT_DIFF</text-property>
+                    <text-property name="heading">AUDIT_DIFF</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">AFTER_ADJUST_DIFF</property>
+                    <property name="analysis">measure</property>
+                    <text-property name="displayName">AFTER_ADJUST_DIFF</text-property>
+                    <text-property name="heading">AFTER_ADJUST_DIFF</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">AUDIT_ADVISE</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">AUDIT_ADVISE</text-property>
+                    <text-property name="heading">AUDIT_ADVISE</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">AUDIT_TIME</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">AUDIT_TIME</text-property>
+                    <text-property name="heading">AUDIT_TIME</text-property>
+                </structure>
+            </list-property>
+            <list-property name="parameters">
+                <structure>
+                    <property name="name">p_lineid</property>
+                    <property name="paramName">p_LineId</property>
+                    <property name="nativeName"></property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">0</property>
+                    <property name="position">1</property>
+                    <property name="isOptional">false</property>
+                    <property name="isInput">true</property>
+                    <property name="isOutput">false</property>
+                </structure>
+                <structure>
+                    <property name="name">p_start</property>
+                    <property name="paramName">p_Start</property>
+                    <property name="nativeName"></property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">0</property>
+                    <property name="position">2</property>
+                    <property name="isOptional">false</property>
+                    <property name="isInput">true</property>
+                    <property name="isOutput">false</property>
+                </structure>
+                <structure>
+                    <property name="name">p_End</property>
+                    <property name="paramName">p_End</property>
+                    <property name="nativeName"></property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">0</property>
+                    <property name="position">3</property>
+                    <property name="isOptional">false</property>
+                    <property name="isInput">true</property>
+                    <property name="isOutput">false</property>
+                </structure>
+            </list-property>
+            <structure name="cachedMetaData">
+                <list-property name="resultSet">
+                    <structure>
+                        <property name="position">1</property>
+                        <property name="name">REPORTDATE</property>
+                        <property name="dataType">date-time</property>
+                    </structure>
+                    <structure>
+                        <property name="position">2</property>
+                        <property name="name">STATIONID</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">3</property>
+                        <property name="name">STATIONNAME</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">4</property>
+                        <property name="name">OPERATORID</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">5</property>
+                        <property name="name">TRANSACTION_INCOME</property>
+                        <property name="dataType">decimal</property>
+                    </structure>
+                    <structure>
+                        <property name="position">6</property>
+                        <property name="name">TRANSACTION_ADJUST</property>
+                        <property name="dataType">decimal</property>
+                    </structure>
+                    <structure>
+                        <property name="position">7</property>
+                        <property name="name">AFTER_TRANSACTION_ADJUST</property>
+                        <property name="dataType">decimal</property>
+                    </structure>
+                    <structure>
+                        <property name="position">8</property>
+                        <property name="name">REAL_RECEIVE</property>
+                        <property name="dataType">decimal</property>
+                    </structure>
+                    <structure>
+                        <property name="position">9</property>
+                        <property name="name">REAL_RETURN</property>
+                        <property name="dataType">decimal</property>
+                    </structure>
+                    <structure>
+                        <property name="position">10</property>
+                        <property name="name">REAL_INCOME</property>
+                        <property name="dataType">decimal</property>
+                    </structure>
+                    <structure>
+                        <property name="position">11</property>
+                        <property name="name">REAL_ADJUST</property>
+                        <property name="dataType">decimal</property>
+                    </structure>
+                    <structure>
+                        <property name="position">12</property>
+                        <property name="name">AFTER_REAL_ADJUST</property>
+                        <property name="dataType">decimal</property>
+                    </structure>
+                    <structure>
+                        <property name="position">13</property>
+                        <property name="name">AUDIT_DIFF</property>
+                        <property name="dataType">decimal</property>
+                    </structure>
+                    <structure>
+                        <property name="position">14</property>
+                        <property name="name">AFTER_ADJUST_DIFF</property>
+                        <property name="dataType">decimal</property>
+                    </structure>
+                    <structure>
+                        <property name="position">15</property>
+                        <property name="name">AUDIT_ADVISE</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">16</property>
+                        <property name="name">AUDIT_TIME</property>
+                        <property name="dataType">date-time</property>
+                    </structure>
+                </list-property>
+            </structure>
+            <property name="dataSource">lccreport_ds</property>
+            <list-property name="resultSet">
+                <structure>
+                    <property name="position">1</property>
+                    <property name="name">REPORTDATE</property>
+                    <property name="nativeName">REPORTDATE</property>
+                    <property name="dataType">date-time</property>
+                    <property name="nativeDataType">93</property>
+                </structure>
+                <structure>
+                    <property name="position">2</property>
+                    <property name="name">STATIONID</property>
+                    <property name="nativeName">STATIONID</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">3</property>
+                    <property name="name">STATIONNAME</property>
+                    <property name="nativeName">STATIONNAME</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">4</property>
+                    <property name="name">OPERATORID</property>
+                    <property name="nativeName">OPERATORID</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">5</property>
+                    <property name="name">TRANSACTION_INCOME</property>
+                    <property name="nativeName">TRANSACTION_INCOME</property>
+                    <property name="dataType">decimal</property>
+                    <property name="nativeDataType">2</property>
+                </structure>
+                <structure>
+                    <property name="position">6</property>
+                    <property name="name">TRANSACTION_ADJUST</property>
+                    <property name="nativeName">TRANSACTION_ADJUST</property>
+                    <property name="dataType">decimal</property>
+                    <property name="nativeDataType">2</property>
+                </structure>
+                <structure>
+                    <property name="position">7</property>
+                    <property name="name">AFTER_TRANSACTION_ADJUST</property>
+                    <property name="nativeName">AFTER_TRANSACTION_ADJUST</property>
+                    <property name="dataType">decimal</property>
+                    <property name="nativeDataType">2</property>
+                </structure>
+                <structure>
+                    <property name="position">8</property>
+                    <property name="name">REAL_RECEIVE</property>
+                    <property name="nativeName">REAL_RECEIVE</property>
+                    <property name="dataType">decimal</property>
+                    <property name="nativeDataType">2</property>
+                </structure>
+                <structure>
+                    <property name="position">9</property>
+                    <property name="name">REAL_RETURN</property>
+                    <property name="nativeName">REAL_RETURN</property>
+                    <property name="dataType">decimal</property>
+                    <property name="nativeDataType">2</property>
+                </structure>
+                <structure>
+                    <property name="position">10</property>
+                    <property name="name">REAL_INCOME</property>
+                    <property name="nativeName">REAL_INCOME</property>
+                    <property name="dataType">decimal</property>
+                    <property name="nativeDataType">2</property>
+                </structure>
+                <structure>
+                    <property name="position">11</property>
+                    <property name="name">REAL_ADJUST</property>
+                    <property name="nativeName">REAL_ADJUST</property>
+                    <property name="dataType">decimal</property>
+                    <property name="nativeDataType">2</property>
+                </structure>
+                <structure>
+                    <property name="position">12</property>
+                    <property name="name">AFTER_REAL_ADJUST</property>
+                    <property name="nativeName">AFTER_REAL_ADJUST</property>
+                    <property name="dataType">decimal</property>
+                    <property name="nativeDataType">2</property>
+                </structure>
+                <structure>
+                    <property name="position">13</property>
+                    <property name="name">AUDIT_DIFF</property>
+                    <property name="nativeName">AUDIT_DIFF</property>
+                    <property name="dataType">decimal</property>
+                    <property name="nativeDataType">2</property>
+                </structure>
+                <structure>
+                    <property name="position">14</property>
+                    <property name="name">AFTER_ADJUST_DIFF</property>
+                    <property name="nativeName">AFTER_ADJUST_DIFF</property>
+                    <property name="dataType">decimal</property>
+                    <property name="nativeDataType">2</property>
+                </structure>
+                <structure>
+                    <property name="position">15</property>
+                    <property name="name">AUDIT_ADVISE</property>
+                    <property name="nativeName">AUDIT_ADVISE</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">16</property>
+                    <property name="name">AUDIT_TIME</property>
+                    <property name="nativeName">AUDIT_TIME</property>
+                    <property name="dataType">date-time</property>
+                    <property name="nativeDataType">93</property>
+                </structure>
+            </list-property>
+            <xml-property name="queryText"><![CDATA[SELECT         d.REPORTDATE,
+               d.STATIONID, 
+               e.STATIONNAME,
+               d.OPERATORID, 
+               d.TRANSACTION_INCOME, 
+               d.TRANSACTION_ADJUST, 
+               d.AFTER_TRANSACTION_ADJUST, 
+               nvl(d.REAL_RECEIVE,0) as REAL_RECEIVE, 
+               nvl(d.REAL_RETURN,0) as REAL_RETURN, 
+               d.REAL_INCOME, 
+               d.REAL_ADJUST, 
+               d.AFTER_REAL_ADJUST, 
+               d.AUDIT_DIFF, 
+               d.AFTER_ADJUST_DIFF, 
+               d.AUDIT_ADVISE, 
+               d.AUDIT_TIME
+               FROM 
+(
+SELECT         A.REPORTDATE,
+               A.STATIONID, 
+              -- B.STATIONNAME,
+               A.OPERATORID, 
+               A.TRANSACTION_INCOME, 
+               A.TRANSACTION_ADJUST, 
+               (A.TRANSACTION_INCOME+A.TRANSACTION_ADJUST) as AFTER_TRANSACTION_ADJUST, 
+               c.RECEIVE_AMT AS REAL_RECEIVE, 
+               c.RETRUN_AMT  AS REAL_RETURN, 
+               A.REAL_INCOME, 
+               A.REAL_ADJUST, 
+               (A.REAL_INCOME+A.REAL_ADJUST) AS AFTER_REAL_ADJUST, 
+               A.AUDIT_DIFF, 
+               (A.REAL_INCOME+A.REAL_ADJUST)-(A.TRANSACTION_INCOME+A.TRANSACTION_ADJUST) AS AFTER_ADJUST_DIFF, 
+               A.AUDIT_ADVISE, 
+               A.AUDIT_TIME
+FROM  MON_BOM_CASH_AUDIT A LEFT JOIN 
+(
+SELECT STATIONID,OPERATORID,REPORT_DATE,sum(nvl(RECEIVE_AMT,0)) AS RECEIVE_AMT,SUM(nvl(RETRUN_AMT,0)) RETRUN_AMT FROM 
+(
+ SELECT STATIONID,
+        OPERATORID,
+        REPORT_DATE, 
+        sum(abs(AMOUNT)) AS  RECEIVE_AMT, 
+        0 AS RETRUN_AMT 
+        FROM MON_BOM_CASH_AUDIT_DETAIL WHERE INCOME_SUB_TYPE='20' GROUP BY  STATIONID,OPERATORID,REPORT_DATE 
+        UNION ALL 
+ 
+SELECT STATIONID,
+       OPERATORID,
+       REPORT_DATE, 
+       0 AS  RECEIVE_AMT, 
+       sum(abs(AMOUNT))  AS RETRUN_AMT 
+       FROM MON_BOM_CASH_AUDIT_DETAIL WHERE INCOME_SUB_TYPE='21' GROUP BY  STATIONID,OPERATORID,REPORT_DATE
+) GROUP BY STATIONID,OPERATORID,REPORT_DATE
+) c  ON  A.REPORTDATE=c.REPORT_DATE
+     AND A.STATIONID=c.STATIONID
+     AND A.OPERATORID=c.OPERATORID
+     WHERE   A.LINEID=?
+     AND A.REPORTDATE>=to_date(?||' 00:00:00','yyyy-MM-dd hh24:mi:ss')
+     and A.REPORTDATE<=to_date(?||' 00:00:00','yyyy-MM-dd hh24:mi:ss')
+) d,
+( SELECT  STATIONID,
+          STATIONNAME 
+          FROM PRM5016_STATION 
+          WHERE RECID=(SELECT RECID FROM PRMVERSION WHERE MODULETYPE='5016' AND STATUS='Current')
+        ) e    WHERE d.STATIONID=e.STATIONID order by d.STATIONID]]></xml-property>
+            <xml-property name="designerValues"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<model:DesignValues xmlns:design="http://www.eclipse.org/datatools/connectivity/oda/design" xmlns:model="http://www.eclipse.org/birt/report/model/adapter/odaModel">
+  <Version>2.0</Version>
+  <design:ResultSets derivedMetaData="true">
+    <design:resultSetDefinitions>
+      <design:resultSetColumns>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>STATIONID</design:name>
+              <design:position>1</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>4</design:precision>
+            <design:scale>0</design:scale>
+            <design:nullability>NotNullable</design:nullability>
+            <design:uiHints>
+              <design:displayName>STATIONID</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>STATIONID</design:label>
+            <design:formattingHints>
+              <design:displaySize>4</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>STATIONNAME</design:name>
+              <design:position>2</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>40</design:precision>
+            <design:scale>0</design:scale>
+            <design:nullability>NotNullable</design:nullability>
+            <design:uiHints>
+              <design:displayName>STATIONNAME</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>STATIONNAME</design:label>
+            <design:formattingHints>
+              <design:displaySize>40</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>OPERATORID</design:name>
+              <design:position>3</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>6</design:precision>
+            <design:scale>0</design:scale>
+            <design:nullability>NotNullable</design:nullability>
+            <design:uiHints>
+              <design:displayName>OPERATORID</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>OPERATORID</design:label>
+            <design:formattingHints>
+              <design:displaySize>6</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>TRANSACTION_INCOME</design:name>
+              <design:position>4</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>2</design:nativeDataTypeCode>
+            <design:precision>10</design:precision>
+            <design:scale>0</design:scale>
+            <design:nullability>Nullable</design:nullability>
+            <design:uiHints>
+              <design:displayName>TRANSACTION_INCOME</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>TRANSACTION_INCOME</design:label>
+            <design:formattingHints>
+              <design:displaySize>11</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>TRANSACTION_ADJUST</design:name>
+              <design:position>5</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>2</design:nativeDataTypeCode>
+            <design:precision>10</design:precision>
+            <design:scale>0</design:scale>
+            <design:nullability>Nullable</design:nullability>
+            <design:uiHints>
+              <design:displayName>TRANSACTION_ADJUST</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>TRANSACTION_ADJUST</design:label>
+            <design:formattingHints>
+              <design:displaySize>11</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>AFTER_TRANSACTION_ADJUST</design:name>
+              <design:position>6</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>2</design:nativeDataTypeCode>
+            <design:precision>10</design:precision>
+            <design:scale>0</design:scale>
+            <design:nullability>Nullable</design:nullability>
+            <design:uiHints>
+              <design:displayName>AFTER_TRANSACTION_ADJUST</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>AFTER_TRANSACTION_ADJUST</design:label>
+            <design:formattingHints>
+              <design:displaySize>11</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>REAL_RECEIVE</design:name>
+              <design:position>7</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>2</design:nativeDataTypeCode>
+            <design:precision>10</design:precision>
+            <design:scale>0</design:scale>
+            <design:nullability>Nullable</design:nullability>
+            <design:uiHints>
+              <design:displayName>REAL_RECEIVE</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>REAL_RECEIVE</design:label>
+            <design:formattingHints>
+              <design:displaySize>11</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>REAL_RETURN</design:name>
+              <design:position>8</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>2</design:nativeDataTypeCode>
+            <design:precision>10</design:precision>
+            <design:scale>0</design:scale>
+            <design:nullability>Nullable</design:nullability>
+            <design:uiHints>
+              <design:displayName>REAL_RETURN</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>REAL_RETURN</design:label>
+            <design:formattingHints>
+              <design:displaySize>11</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>REAL_INCOME</design:name>
+              <design:position>9</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>2</design:nativeDataTypeCode>
+            <design:precision>10</design:precision>
+            <design:scale>0</design:scale>
+            <design:nullability>Nullable</design:nullability>
+            <design:uiHints>
+              <design:displayName>REAL_INCOME</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>REAL_INCOME</design:label>
+            <design:formattingHints>
+              <design:displaySize>11</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>REAL_ADJUST</design:name>
+              <design:position>10</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>2</design:nativeDataTypeCode>
+            <design:precision>10</design:precision>
+            <design:scale>0</design:scale>
+            <design:nullability>Nullable</design:nullability>
+            <design:uiHints>
+              <design:displayName>REAL_ADJUST</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>REAL_ADJUST</design:label>
+            <design:formattingHints>
+              <design:displaySize>11</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>AFTER_REAL_ADJUST</design:name>
+              <design:position>11</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>2</design:nativeDataTypeCode>
+            <design:precision>10</design:precision>
+            <design:scale>0</design:scale>
+            <design:nullability>Nullable</design:nullability>
+            <design:uiHints>
+              <design:displayName>AFTER_REAL_ADJUST</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>AFTER_REAL_ADJUST</design:label>
+            <design:formattingHints>
+              <design:displaySize>11</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>AUDIT_DIFF</design:name>
+              <design:position>12</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>2</design:nativeDataTypeCode>
+            <design:precision>10</design:precision>
+            <design:scale>0</design:scale>
+            <design:nullability>Nullable</design:nullability>
+            <design:uiHints>
+              <design:displayName>AUDIT_DIFF</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>AUDIT_DIFF</design:label>
+            <design:formattingHints>
+              <design:displaySize>11</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>AFTER_ADJUST_DIFF</design:name>
+              <design:position>13</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>2</design:nativeDataTypeCode>
+            <design:precision>10</design:precision>
+            <design:scale>0</design:scale>
+            <design:nullability>Nullable</design:nullability>
+            <design:uiHints>
+              <design:displayName>AFTER_ADJUST_DIFF</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>AFTER_ADJUST_DIFF</design:label>
+            <design:formattingHints>
+              <design:displaySize>11</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>AUDIT_ADVISE</design:name>
+              <design:position>14</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>400</design:precision>
+            <design:scale>0</design:scale>
+            <design:nullability>Nullable</design:nullability>
+            <design:uiHints>
+              <design:displayName>AUDIT_ADVISE</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>AUDIT_ADVISE</design:label>
+            <design:formattingHints>
+              <design:displaySize>400</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>AUDIT_TIME</design:name>
+              <design:position>15</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>93</design:nativeDataTypeCode>
+            <design:precision>0</design:precision>
+            <design:scale>0</design:scale>
+            <design:nullability>Nullable</design:nullability>
+            <design:uiHints>
+              <design:displayName>AUDIT_TIME</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>AUDIT_TIME</design:label>
+            <design:formattingHints>
+              <design:displaySize>7</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+      </design:resultSetColumns>
+      <design:criteria/>
+    </design:resultSetDefinitions>
+  </design:ResultSets>
+</model:DesignValues>]]></xml-property>
+        </oda-data-set>
+        <oda-data-set extensionID="org.eclipse.birt.report.data.oda.jdbc.JdbcSelectDataSet" name="DS_USER" id="3995">
+            <property name="nullsOrdering">nulls lowest</property>
+            <list-property name="columnHints">
+                <structure>
+                    <property name="columnName">USERNAME</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">USERNAME</text-property>
+                    <text-property name="heading">USERNAME</text-property>
+                </structure>
+            </list-property>
+            <list-property name="parameters">
+                <structure>
+                    <property name="name">param_1</property>
+                    <property name="paramName">user_id</property>
+                    <property name="dataType">string</property>
+                    <property name="position">1</property>
+                    <property name="isInput">true</property>
+                    <property name="isOutput">false</property>
+                </structure>
+            </list-property>
+            <structure name="cachedMetaData">
+                <list-property name="resultSet">
+                    <structure>
+                        <property name="position">1</property>
+                        <property name="name">USERNAME</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                </list-property>
+            </structure>
+            <property name="dataSource">lccreport_ds</property>
+            <list-property name="resultSet">
+                <structure>
+                    <property name="position">1</property>
+                    <property name="name">USERNAME</property>
+                    <property name="nativeName">USERNAME</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+            </list-property>
+            <xml-property name="queryText"><![CDATA[select USERNAME from PRM5021_ACCOUNTINFO where userid=?]]></xml-property>
+        </oda-data-set>
+    </data-sets>
+    <page-setup>
+        <simple-master-page name="Simple MasterPage" id="2">
+            <property name="type">a3</property>
+            <property name="height">297mm</property>
+            <property name="width">450mm</property>
+            <property name="showHeaderOnFirst">false</property>
+            <property name="showFooterOnLast">false</property>
+            <page-footer>
+                <text id="3">
+                    <property name="contentType">html</property>
+                    <text-property name="content"><![CDATA[<value-of>new Date()</value-of>]]></text-property>
+                </text>
+            </page-footer>
+        </simple-master-page>
+    </page-setup>
+    <body>
+        <table id="3811">
+            <property name="marginTop">2pt</property>
+            <property name="marginLeft">2pt</property>
+            <property name="marginBottom">2pt</property>
+            <property name="marginRight">2pt</property>
+            <property name="textAlign">center</property>
+            <property name="verticalAlign">middle</property>
+            <property name="width">11.125in</property>
+            <property name="dataSet">DS_MON_BOM_CASH_AUDIT</property>
+            <list-property name="boundDataColumns">
+                <structure>
+                    <property name="name">REPORTDATE</property>
+                    <text-property name="displayName">REPORTDATE</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["REPORTDATE"]</expression>
+                    <property name="dataType">date-time</property>
+                </structure>
+                <structure>
+                    <property name="name">STATIONNAME</property>
+                    <text-property name="displayName">STATIONNAME</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["STATIONNAME"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">OPERATORID</property>
+                    <text-property name="displayName">OPERATORID</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["OPERATORID"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">TRANSACTION_ADJUST</property>
+                    <text-property name="displayName">TRANSACTION_ADJUST</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["TRANSACTION_ADJUST"]</expression>
+                    <property name="dataType">decimal</property>
+                </structure>
+                <structure>
+                    <property name="name">TRANSACTION_INCOME</property>
+                    <text-property name="displayName">TRANSACTION_INCOME</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["TRANSACTION_INCOME"]</expression>
+                    <property name="dataType">decimal</property>
+                </structure>
+                <structure>
+                    <property name="name">AFTER_TRANSACTION_ADJUST</property>
+                    <text-property name="displayName">AFTER_TRANSACTION_ADJUST</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["AFTER_TRANSACTION_ADJUST"]</expression>
+                    <property name="dataType">decimal</property>
+                </structure>
+                <structure>
+                    <property name="name">REAL_RECEIVE</property>
+                    <text-property name="displayName">REAL_RECEIVE</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["REAL_RECEIVE"]</expression>
+                    <property name="dataType">decimal</property>
+                </structure>
+                <structure>
+                    <property name="name">REAL_RETURN</property>
+                    <text-property name="displayName">REAL_RETURN</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["REAL_RETURN"]</expression>
+                    <property name="dataType">decimal</property>
+                </structure>
+                <structure>
+                    <property name="name">REAL_ADJUST</property>
+                    <text-property name="displayName">REAL_ADJUST</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["REAL_ADJUST"]</expression>
+                    <property name="dataType">decimal</property>
+                </structure>
+                <structure>
+                    <property name="name">AFTER_REAL_ADJUST</property>
+                    <text-property name="displayName">AFTER_REAL_ADJUST</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["AFTER_REAL_ADJUST"]</expression>
+                    <property name="dataType">decimal</property>
+                </structure>
+                <structure>
+                    <property name="name">AFTER_ADJUST_DIFF</property>
+                    <text-property name="displayName">AFTER_ADJUST_DIFF</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["AFTER_ADJUST_DIFF"]</expression>
+                    <property name="dataType">decimal</property>
+                </structure>
+                <structure>
+                    <property name="name">AUDIT_TIME</property>
+                    <text-property name="displayName">AUDIT_TIME</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["AUDIT_TIME"]</expression>
+                    <property name="dataType">date-time</property>
+                </structure>
+                <structure>
+                    <property name="name">AUDIT_ADVISE</property>
+                    <text-property name="displayName">AUDIT_ADVISE</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["AUDIT_ADVISE"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">A1</property>
+                    <property name="dataType">float</property>
+                    <property name="aggregateFunction">SUM</property>
+                    <list-property name="arguments">
+                        <structure>
+                            <property name="name">Expression</property>
+                            <expression name="value" type="javascript">row["TRANSACTION_INCOME"]</expression>
+                        </structure>
+                    </list-property>
+                    <property name="allowExport">true</property>
+                </structure>
+                <structure>
+                    <property name="name">A2</property>
+                    <property name="dataType">float</property>
+                    <property name="aggregateFunction">SUM</property>
+                    <list-property name="arguments">
+                        <structure>
+                            <property name="name">Expression</property>
+                            <expression name="value" type="javascript">row["TRANSACTION_ADJUST"]</expression>
+                        </structure>
+                    </list-property>
+                    <property name="allowExport">true</property>
+                </structure>
+                <structure>
+                    <property name="name">A3</property>
+                    <property name="dataType">float</property>
+                    <property name="aggregateFunction">SUM</property>
+                    <list-property name="arguments">
+                        <structure>
+                            <property name="name">Expression</property>
+                            <expression name="value" type="javascript">row["AFTER_TRANSACTION_ADJUST"]</expression>
+                        </structure>
+                    </list-property>
+                    <property name="allowExport">true</property>
+                </structure>
+                <structure>
+                    <property name="name">A4</property>
+                    <property name="dataType">float</property>
+                    <property name="aggregateFunction">SUM</property>
+                    <list-property name="arguments">
+                        <structure>
+                            <property name="name">Expression</property>
+                            <expression name="value" type="javascript">row["REAL_RECEIVE"]</expression>
+                        </structure>
+                    </list-property>
+                    <property name="allowExport">true</property>
+                </structure>
+                <structure>
+                    <property name="name">A5</property>
+                    <property name="dataType">float</property>
+                    <property name="aggregateFunction">SUM</property>
+                    <list-property name="arguments">
+                        <structure>
+                            <property name="name">Expression</property>
+                            <expression name="value" type="javascript">row["REAL_RETURN"]</expression>
+                        </structure>
+                    </list-property>
+                    <property name="allowExport">true</property>
+                </structure>
+                <structure>
+                    <property name="name">A6</property>
+                    <property name="dataType">float</property>
+                    <property name="aggregateFunction">SUM</property>
+                    <list-property name="arguments">
+                        <structure>
+                            <property name="name">Expression</property>
+                            <expression name="value" type="javascript">row["REAL_ADJUST"]</expression>
+                        </structure>
+                    </list-property>
+                    <property name="allowExport">true</property>
+                </structure>
+                <structure>
+                    <property name="name">A7</property>
+                    <property name="dataType">float</property>
+                    <property name="aggregateFunction">SUM</property>
+                    <list-property name="arguments">
+                        <structure>
+                            <property name="name">Expression</property>
+                            <expression name="value" type="javascript">row["AFTER_REAL_ADJUST"]</expression>
+                        </structure>
+                    </list-property>
+                    <property name="allowExport">true</property>
+                </structure>
+                <structure>
+                    <property name="name">A8</property>
+                    <property name="dataType">float</property>
+                    <property name="aggregateFunction">SUM</property>
+                    <list-property name="arguments">
+                        <structure>
+                            <property name="name">Expression</property>
+                            <expression name="value" type="javascript">row["AFTER_ADJUST_DIFF"]</expression>
+                        </structure>
+                    </list-property>
+                    <property name="allowExport">true</property>
+                </structure>
+            </list-property>
+            <column id="3857">
+                <property name="width">0.8645833333333334in</property>
+            </column>
+            <column id="3858">
+                <property name="width">0.8645833333333334in</property>
+            </column>
+            <column id="3859">
+                <property name="width">0.8645833333333334in</property>
+            </column>
+            <column id="3860">
+                <property name="width">0.8645833333333334in</property>
+            </column>
+            <column id="3861">
+                <property name="width">0.8541666666666666in</property>
+            </column>
+            <column id="3862">
+                <property name="width">0.8541666666666666in</property>
+            </column>
+            <column id="3863">
+                <property name="width">0.8541666666666666in</property>
+            </column>
+            <column id="3864">
+                <property name="width">0.8541666666666666in</property>
+            </column>
+            <column id="3865">
+                <property name="width">0.8541666666666666in</property>
+            </column>
+            <column id="3866">
+                <property name="width">0.8541666666666666in</property>
+            </column>
+            <column id="3867">
+                <property name="width">0.8541666666666666in</property>
+            </column>
+            <column id="3868">
+                <property name="width">0.8541666666666666in</property>
+            </column>
+            <column id="3870">
+                <property name="width">0.8333333333333334in</property>
+            </column>
+            <header>
+                <row id="3901">
+                    <property name="height">0.375in</property>
+                    <cell id="3902">
+                        <property name="colSpan">13</property>
+                        <property name="rowSpan">1</property>
+                        <label id="346">
+                            <property name="fontFamily">"@宋体"</property>
+                            <property name="fontSize">20pt</property>
+                            <property name="fontWeight">bold</property>
+                            <property name="paddingTop">2pt</property>
+                            <text-property name="text">现金审核报表</text-property>
+                        </label>
+                    </cell>
+                </row>
+                <row id="3886">
+                    <property name="height">0.3645833333333333in</property>
+                    <cell id="3887">
+                        <property name="colSpan">13</property>
+                        <property name="rowSpan">1</property>
+                    </cell>
+                </row>
+                <row id="3871">
+                    <property name="height">0.3645833333333333in</property>
+                    <cell id="3872">
+                        <property name="colSpan">12</property>
+                        <property name="rowSpan">1</property>
+                        <text-data id="348">
+                            <property name="fontFamily">"@宋体"</property>
+                            <property name="fontSize">12pt</property>
+                            <property name="fontWeight">bold</property>
+                            <property name="textAlign">left</property>
+                            <expression name="valueExpr">"日期: "+params["p_Start"].value+" ~ "+params["p_End"].value</expression>
+                            <property name="contentType">html</property>
+                        </text-data>
+                    </cell>
+                    <cell id="3884">
+                        <property name="colSpan">1</property>
+                        <property name="rowSpan">1</property>
+                        <label id="377">
+                            <property name="fontFamily">"@宋体"</property>
+                            <property name="fontSize">12pt</property>
+                            <property name="fontWeight">bold</property>
+                            <property name="textAlign">right</property>
+                            <text-property name="text">单位：元</text-property>
+                        </label>
+                    </cell>
+                </row>
+                <row id="3812">
+                    <property name="height">0.3541666666666667in</property>
+                    <cell id="3813">
+                        <property name="backgroundColor">#ACD6FF</property>
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">thin</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">thin</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">thin</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">thin</property>
+                        <property name="verticalAlign">middle</property>
+                        <label id="3916">
+                            <property name="fontFamily">"@宋体"</property>
+                            <property name="fontSize">12pt</property>
+                            <property name="fontWeight">bold</property>
+                            <property name="textAlign">center</property>
+                            <text-property name="text">日期</text-property>
+                        </label>
+                    </cell>
+                    <cell id="3814">
+                        <property name="backgroundColor">#ACD6FF</property>
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">thin</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">thin</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">thin</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">thin</property>
+                        <property name="verticalAlign">middle</property>
+                        <label id="3917">
+                            <property name="fontFamily">"@宋体"</property>
+                            <property name="fontSize">12pt</property>
+                            <property name="fontWeight">bold</property>
+                            <property name="textAlign">center</property>
+                            <text-property name="text">车站</text-property>
+                        </label>
+                    </cell>
+                    <cell id="3815">
+                        <property name="backgroundColor">#ACD6FF</property>
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">thin</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">thin</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">thin</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">thin</property>
+                        <property name="verticalAlign">middle</property>
+                        <label id="3918">
+                            <property name="fontFamily">"@宋体"</property>
+                            <property name="fontSize">12pt</property>
+                            <property name="fontWeight">bold</property>
+                            <property name="textAlign">center</property>
+                            <text-property name="text">操作员</text-property>
+                        </label>
+                    </cell>
+                    <cell id="3816">
+                        <property name="backgroundColor">#ACD6FF</property>
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">thin</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">thin</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">thin</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">thin</property>
+                        <property name="verticalAlign">middle</property>
+                        <label id="3919">
+                            <property name="fontFamily">"@宋体"</property>
+                            <property name="fontSize">12pt</property>
+                            <property name="fontWeight">bold</property>
+                            <property name="textAlign">center</property>
+                            <text-property name="text">交易应收</text-property>
+                        </label>
+                    </cell>
+                    <cell id="3817">
+                        <property name="backgroundColor">#ACD6FF</property>
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">thin</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">thin</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">thin</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">thin</property>
+                        <property name="verticalAlign">middle</property>
+                        <label id="3920">
+                            <property name="fontFamily">"@宋体"</property>
+                            <property name="fontSize">12pt</property>
+                            <property name="fontWeight">bold</property>
+                            <property name="textAlign">center</property>
+                            <text-property name="text">应收调整金额</text-property>
+                        </label>
+                    </cell>
+                    <cell id="3818">
+                        <property name="backgroundColor">#ACD6FF</property>
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">thin</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">thin</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">thin</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">thin</property>
+                        <property name="verticalAlign">middle</property>
+                        <label id="3921">
+                            <property name="fontFamily">"@宋体"</property>
+                            <property name="fontSize">12pt</property>
+                            <property name="fontWeight">bold</property>
+                            <property name="textAlign">center</property>
+                            <text-property name="text">调整后应收</text-property>
+                        </label>
+                    </cell>
+                    <cell id="3819">
+                        <property name="backgroundColor">#ACD6FF</property>
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">thin</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">thin</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">thin</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">thin</property>
+                        <property name="verticalAlign">middle</property>
+                        <label id="3922">
+                            <property name="fontFamily">"@宋体"</property>
+                            <property name="fontSize">12pt</property>
+                            <property name="fontWeight">bold</property>
+                            <property name="textAlign">center</property>
+                            <text-property name="text">实收借领金额</text-property>
+                        </label>
+                    </cell>
+                    <cell id="3820">
+                        <property name="backgroundColor">#ACD6FF</property>
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">thin</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">thin</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">thin</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">thin</property>
+                        <property name="verticalAlign">middle</property>
+                        <label id="3923">
+                            <property name="fontFamily">"@宋体"</property>
+                            <property name="fontSize">12pt</property>
+                            <property name="fontWeight">bold</property>
+                            <property name="textAlign">center</property>
+                            <text-property name="text">实收返还金额</text-property>
+                        </label>
+                    </cell>
+                    <cell id="3821">
+                        <property name="backgroundColor">#ACD6FF</property>
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">thin</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">thin</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">thin</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">thin</property>
+                        <property name="verticalAlign">middle</property>
+                        <label id="3924">
+                            <property name="fontFamily">"@宋体"</property>
+                            <property name="fontSize">12pt</property>
+                            <property name="fontWeight">bold</property>
+                            <property name="textAlign">center</property>
+                            <text-property name="text">实收调整</text-property>
+                        </label>
+                    </cell>
+                    <cell id="3822">
+                        <property name="backgroundColor">#ACD6FF</property>
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">thin</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">thin</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">thin</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">thin</property>
+                        <property name="verticalAlign">middle</property>
+                        <label id="3925">
+                            <property name="fontFamily">"@宋体"</property>
+                            <property name="fontSize">12pt</property>
+                            <property name="fontWeight">bold</property>
+                            <property name="textAlign">center</property>
+                            <text-property name="text">调整后实收金额</text-property>
+                        </label>
+                    </cell>
+                    <cell id="3823">
+                        <property name="backgroundColor">#ACD6FF</property>
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">thin</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">thin</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">thin</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">thin</property>
+                        <property name="verticalAlign">middle</property>
+                        <label id="3926">
+                            <property name="fontFamily">"@宋体"</property>
+                            <property name="fontSize">12pt</property>
+                            <property name="fontWeight">bold</property>
+                            <property name="textAlign">center</property>
+                            <text-property name="text">审核后差异</text-property>
+                        </label>
+                    </cell>
+                    <cell id="3824">
+                        <property name="backgroundColor">#ACD6FF</property>
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">thin</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">thin</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">thin</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">thin</property>
+                        <property name="verticalAlign">middle</property>
+                        <label id="3927">
+                            <property name="fontFamily">"@宋体"</property>
+                            <property name="fontSize">12pt</property>
+                            <property name="fontWeight">bold</property>
+                            <property name="textAlign">center</property>
+                            <text-property name="text">审核时间</text-property>
+                        </label>
+                    </cell>
+                    <cell id="3826">
+                        <property name="backgroundColor">#ACD6FF</property>
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">thin</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">thin</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">thin</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">thin</property>
+                        <property name="verticalAlign">middle</property>
+                        <label id="3929">
+                            <property name="fontFamily">"@宋体"</property>
+                            <property name="fontSize">12pt</property>
+                            <property name="fontWeight">bold</property>
+                            <property name="textAlign">center</property>
+                            <text-property name="text">审核意见</text-property>
+                        </label>
+                    </cell>
+                </row>
+            </header>
+            <detail>
+                <row id="3827">
+                    <property name="height">0.34375in</property>
+                    <cell id="3828">
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">thin</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">thin</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">thin</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">thin</property>
+                        <property name="verticalAlign">middle</property>
+                        <data id="3932">
+                            <structure name="dateTimeFormat">
+                                <property name="category">Custom</property>
+                                <property name="pattern">yyyy-MM-dd</property>
+                            </structure>
+                            <property name="resultSetColumn">REPORTDATE</property>
+                        </data>
+                    </cell>
+                    <cell id="3829">
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">thin</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">thin</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">thin</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">thin</property>
+                        <property name="verticalAlign">middle</property>
+                        <data id="3933">
+                            <property name="resultSetColumn">STATIONNAME</property>
+                        </data>
+                    </cell>
+                    <cell id="3830">
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">thin</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">thin</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">thin</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">thin</property>
+                        <property name="verticalAlign">middle</property>
+                        <data id="3934">
+                            <property name="resultSetColumn">OPERATORID</property>
+                        </data>
+                    </cell>
+                    <cell id="3831">
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">thin</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">thin</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">thin</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">thin</property>
+                        <property name="verticalAlign">middle</property>
+                        <data id="3936">
+                            <property name="resultSetColumn">TRANSACTION_INCOME</property>
+                        </data>
+                    </cell>
+                    <cell id="3832">
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">thin</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">thin</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">thin</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">thin</property>
+                        <property name="verticalAlign">middle</property>
+                        <data id="3935">
+                            <property name="resultSetColumn">TRANSACTION_ADJUST</property>
+                        </data>
+                    </cell>
+                    <cell id="3833">
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">thin</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">thin</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">thin</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">thin</property>
+                        <property name="verticalAlign">middle</property>
+                        <data id="3937">
+                            <property name="resultSetColumn">AFTER_TRANSACTION_ADJUST</property>
+                        </data>
+                    </cell>
+                    <cell id="3834">
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">thin</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">thin</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">thin</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">thin</property>
+                        <property name="verticalAlign">middle</property>
+                        <data id="3938">
+                            <property name="resultSetColumn">REAL_RECEIVE</property>
+                        </data>
+                    </cell>
+                    <cell id="3835">
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">thin</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">thin</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">thin</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">thin</property>
+                        <property name="verticalAlign">middle</property>
+                        <data id="3939">
+                            <property name="resultSetColumn">REAL_RETURN</property>
+                        </data>
+                    </cell>
+                    <cell id="3836">
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">thin</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">thin</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">thin</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">thin</property>
+                        <property name="verticalAlign">middle</property>
+                        <data id="3940">
+                            <property name="resultSetColumn">REAL_ADJUST</property>
+                        </data>
+                    </cell>
+                    <cell id="3837">
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">thin</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">thin</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">thin</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">thin</property>
+                        <property name="verticalAlign">middle</property>
+                        <data id="3941">
+                            <property name="resultSetColumn">AFTER_REAL_ADJUST</property>
+                        </data>
+                    </cell>
+                    <cell id="3838">
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">thin</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">thin</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">thin</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">thin</property>
+                        <property name="verticalAlign">middle</property>
+                        <data id="3942">
+                            <property name="resultSetColumn">AFTER_ADJUST_DIFF</property>
+                        </data>
+                    </cell>
+                    <cell id="3839">
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">thin</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">thin</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">thin</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">thin</property>
+                        <property name="verticalAlign">middle</property>
+                        <data id="3943">
+                            <structure name="dateTimeFormat">
+                                <property name="category">Custom</property>
+                                <property name="pattern">yyyy-MM-dd HH:mm:ss</property>
+                            </structure>
+                            <property name="resultSetColumn">AUDIT_TIME</property>
+                        </data>
+                    </cell>
+                    <cell id="3841">
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">thin</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">thin</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">thin</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">thin</property>
+                        <property name="verticalAlign">middle</property>
+                        <data id="3944">
+                            <property name="resultSetColumn">AUDIT_ADVISE</property>
+                        </data>
+                    </cell>
+                </row>
+            </detail>
+            <footer>
+                <row id="3842">
+                    <property name="height">0.3645833333333333in</property>
+                    <cell id="3843">
+                        <property name="colSpan">3</property>
+                        <property name="rowSpan">1</property>
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">thin</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">thin</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">thin</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">thin</property>
+                        <label id="3930">
+                            <property name="fontFamily">"@宋体"</property>
+                            <property name="fontSize">12pt</property>
+                            <property name="fontWeight">bold</property>
+                            <property name="textAlign">center</property>
+                            <text-property name="text">合计</text-property>
+                        </label>
+                    </cell>
+                    <cell id="3846">
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">thin</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">thin</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">thin</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">thin</property>
+                        <property name="verticalAlign">middle</property>
+                        <data id="3945">
+                            <property name="resultSetColumn">A1</property>
+                        </data>
+                    </cell>
+                    <cell id="3847">
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">thin</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">thin</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">thin</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">thin</property>
+                        <property name="verticalAlign">middle</property>
+                        <data id="3946">
+                            <property name="resultSetColumn">A2</property>
+                        </data>
+                    </cell>
+                    <cell id="3848">
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">thin</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">thin</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">thin</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">thin</property>
+                        <property name="verticalAlign">middle</property>
+                        <data id="3947">
+                            <property name="resultSetColumn">A3</property>
+                        </data>
+                    </cell>
+                    <cell id="3849">
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">thin</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">thin</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">thin</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">thin</property>
+                        <property name="verticalAlign">middle</property>
+                        <data id="3948">
+                            <property name="resultSetColumn">A4</property>
+                        </data>
+                    </cell>
+                    <cell id="3850">
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">thin</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">thin</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">thin</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">thin</property>
+                        <property name="verticalAlign">middle</property>
+                        <data id="3949">
+                            <property name="resultSetColumn">A5</property>
+                        </data>
+                    </cell>
+                    <cell id="3851">
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">thin</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">thin</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">thin</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">thin</property>
+                        <property name="verticalAlign">middle</property>
+                        <data id="3950">
+                            <property name="resultSetColumn">A6</property>
+                        </data>
+                    </cell>
+                    <cell id="3852">
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">thin</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">thin</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">thin</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">thin</property>
+                        <property name="verticalAlign">middle</property>
+                        <data id="3951">
+                            <property name="resultSetColumn">A7</property>
+                        </data>
+                    </cell>
+                    <cell id="3853">
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">thin</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">thin</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">thin</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">thin</property>
+                        <property name="verticalAlign">middle</property>
+                        <data id="3952">
+                            <property name="resultSetColumn">A8</property>
+                        </data>
+                    </cell>
+                    <cell id="3854">
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">thin</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">thin</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">thin</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">thin</property>
+                        <property name="verticalAlign">middle</property>
+                    </cell>
+                    <cell id="3856">
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">thin</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">thin</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">thin</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">thin</property>
+                        <property name="verticalAlign">middle</property>
+                    </cell>
+                </row>
+                <row id="3953">
+                    <property name="borderBottomStyle">none</property>
+                    <property name="borderLeftStyle">none</property>
+                    <property name="borderRightStyle">none</property>
+                    <property name="borderTopStyle">none</property>
+                    <property name="height">0.3645833333333333in</property>
+                    <cell id="3954">
+                        <property name="colSpan">4</property>
+                        <property name="rowSpan">1</property>
+                        <property name="borderBottomStyle">none</property>
+                        <property name="borderLeftStyle">none</property>
+                        <property name="borderRightStyle">none</property>
+                        <property name="borderTopStyle">none</property>
+                        <property name="verticalAlign">middle</property>
+                    </cell>
+                    <cell id="3970">
+                        <property name="colSpan">3</property>
+                        <property name="rowSpan">1</property>
+                        <property name="borderBottomStyle">none</property>
+                        <property name="borderLeftStyle">none</property>
+                        <property name="borderRightStyle">none</property>
+                        <property name="borderTopStyle">none</property>
+                        <property name="verticalAlign">middle</property>
+                        <label id="3980">
+                            <property name="fontFamily">"@宋体"</property>
+                            <property name="fontSize">12pt</property>
+                            <property name="fontWeight">bold</property>
+                            <property name="textAlign">right</property>
+                            <text-property name="text">制表人:</text-property>
+                        </label>
+                    </cell>
+                    <cell id="3985">
+                        <property name="borderBottomStyle">none</property>
+                        <property name="borderLeftStyle">none</property>
+                        <property name="borderRightStyle">none</property>
+                        <property name="borderTopStyle">none</property>
+                        <property name="verticalAlign">middle</property>
+                        <data id="3998">
+                            <property name="fontSize">12pt</property>
+                            <list-property name="boundDataColumns">
+                                <structure>
+                                    <property name="name">制表人</property>
+                                    <expression name="expression" type="javascript">params["制表人"]</expression>
+                                    <property name="dataType">string</property>
+                                </structure>
+                            </list-property>
+                            <property name="resultSetColumn">制表人</property>
+                        </data>
+                    </cell>
+                    <cell id="3974">
+                        <property name="colSpan">5</property>
+                        <property name="rowSpan">1</property>
+                        <property name="borderBottomStyle">none</property>
+                        <property name="borderLeftStyle">none</property>
+                        <property name="borderRightStyle">none</property>
+                        <property name="borderTopStyle">none</property>
+                        <property name="verticalAlign">middle</property>
+                        <label id="3981">
+                            <property name="fontFamily">"@宋体"</property>
+                            <property name="fontSize">12pt</property>
+                            <property name="fontWeight">bold</property>
+                            <property name="textAlign">center</property>
+                            <text-property name="text">审核人:</text-property>
+                        </label>
+                    </cell>
+                </row>
+            </footer>
+        </table>
+    </body>
+</report>

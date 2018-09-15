@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.eclipse.birt.runtime:org.eclipse.core.filesystem:1.4.0.v20130514-1240">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/eclipse/birt/runtime/org.eclipse.core.filesystem/1.4.0.v20130514-1240/org.eclipse.core.filesystem-1.4.0.v20130514-1240.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/org/eclipse/birt/runtime/org.eclipse.core.filesystem/1.4.0.v20130514-1240/org.eclipse.core.filesystem-1.4.0.v20130514-1240-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/eclipse/birt/runtime/org.eclipse.core.filesystem/1.4.0.v20130514-1240/org.eclipse.core.filesystem-1.4.0.v20130514-1240-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

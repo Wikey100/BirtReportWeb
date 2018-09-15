@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.eclipse.birt.runtime:org.eclipse.datatools.enablement.oda.xml:1.2.5.v201305031101">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/eclipse/birt/runtime/org.eclipse.datatools.enablement.oda.xml/1.2.5.v201305031101/org.eclipse.datatools.enablement.oda.xml-1.2.5.v201305031101.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/org/eclipse/birt/runtime/org.eclipse.datatools.enablement.oda.xml/1.2.5.v201305031101/org.eclipse.datatools.enablement.oda.xml-1.2.5.v201305031101-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/eclipse/birt/runtime/org.eclipse.datatools.enablement.oda.xml/1.2.5.v201305031101/org.eclipse.datatools.enablement.oda.xml-1.2.5.v201305031101-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
